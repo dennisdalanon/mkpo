@@ -1,0 +1,4 @@
+services:
+  netbyte_appointment.appointment:
+    class: Drupal\netbyte_appointment\Services\Appointment
+    arguments: ['@entity.query']

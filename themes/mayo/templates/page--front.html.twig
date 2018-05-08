@@ -1,0 +1,21 @@
+{% extends "page.html.twig" %}
+
+{% block homepagebanner %}
+  {{ attach_library('mayo/home-banner') }}
+  <div class="home-banner">
+    <div class="home-banner-inner inner">
+      <div class="slide active" id="slide0">
+        <img src="/themes/mayo/images/home_banner/1.jpg">
+        <span>Lore erciliquat, vendre<br/>eum iriuscipit ullaore<br/>vullaorer</span>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block logos %}
+  <ul class="logos">
+    <li><a href="http://www.whakawhetu.co.nz/" target="_blank"><img src="/themes/mayo/images/logos/whakawhetu.png"></a></li>
+    <li><a href="http://www.taha.org.nz/" target="_blank"><img src="/themes/mayo/images/logos/taha.png"></a></li>
+    <!-- <li><a href="http://www.health.govt.nz/" target="_blank"><img src="/themes/mayo/images/logos/moh.png"></a></li>
+    <li><a href="http://www.immune.org.nz/" target="_blank"><img src="/themes/mayo/images/logos/iac.png"></a></li> -->
+  </ul>
+{% endblock %}

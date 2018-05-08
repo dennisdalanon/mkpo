@@ -1,0 +1,28 @@
+moment:
+  js:
+    /libraries/moment/moment.js: {}
+
+fullcalendar:
+  remote: http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.0/fullcalendar.min.js
+  license:
+      name: MIT
+      url: http://jquery.malsup.com/license.html
+      gpl-compatible: true
+  version: 2.6.0
+  css:
+      theme:
+        /libraries/fullcalendar-2.6.0/fullcalendar.min.css: {}
+  js:
+    /libraries/fullcalendar-2.6.0/fullcalendar.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/modernizr
+    - netbyte_appointment/moment
+
+
+
+netbyte_appointment_js:
+  js:
+    js/appointment.js: {}
+  dependencies:
+    - netbyte_appointment/fullcalendar

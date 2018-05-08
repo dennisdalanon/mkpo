@@ -1,0 +1,31 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function netbyte_appointment_theme($existing, $type, $theme, $path)
+{
+    /*$variables = array(
+        'block__appointmentcalendar' => array(
+            'variables' => array('events' => NULL),
+            //'template' => 'block--netbyte-appointment-block'
+        ),
+    );*/
+
+    $variables = array(
+        'calendar' => array(
+            'variables' => array('events' => NULL),
+            //'template' => 'hello'
+        ),
+    );
+    return $variables;
+}
+
+/*function netbyte_appointment_theme_suggestions_netbyte_appointment(array $variables)
+{
+    //var_dump($suggestions); die();
+    $suggestions = array();
+
+    $suggestions[] = 'block__appointmentcalendar';
+
+    return $suggestions;
+}*/

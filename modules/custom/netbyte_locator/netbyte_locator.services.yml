@@ -1,0 +1,7 @@
+services:
+  netbyte_locator.geoip:
+    class: Drupal\netbyte_locator\Services\GeoLookup
+    arguments: ['@config.factory','@http_client_factory']
+  netbyte_locator.locatortype:
+    class: Drupal\netbyte_locator\Services\LocatorService
+    arguments: ['@entity_field.manager','@config.factory','@entity.query']

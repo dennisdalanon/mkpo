@@ -1,0 +1,6 @@
+netbyte_locator.admin:
+  title: 'Netbyte locator module settings'
+  description: 'set up locator'
+  parent: system.admin_config_development
+  route_name: netbyte_locator.settings
+  weight: 100

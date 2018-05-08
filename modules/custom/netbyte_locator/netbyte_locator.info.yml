@@ -1,0 +1,12 @@
+name: NetByte Locator Module
+description: Display location on Google map.
+package: Custom
+
+type: module
+core: 8.x
+
+dependencies:
+    - link
+    - views
+
+configure: netbyte_locator.settings

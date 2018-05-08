@@ -1,0 +1,774 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+#header h1 {
+  margin: 0 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 75%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+nav ul,
+nav ol {
+  list-style: none;
+  padding: 0; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal; }
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+  input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'museo300';
+  src: url("../fonts/museo-300-webfont.eot");
+  src: url("../fonts/museo-300-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museo-300-webfont.woff2") format("woff2"), url("../fonts/museo-300-webfont.woff") format("woff"), url("../fonts/museo-300-webfont.ttf") format("truetype"), url("../fonts/museo-300-webfont.svg#museo300") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*------- Begin default section --------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  font-family: 'museo300', Georgia, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', Baskerville, serif;
+  font-size: 87.5%;
+  /* = 14px assuming browser's regular font size is 16px */
+  color: #385464; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  margin-left: 10px; }
+
+ol {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px; }
+
+a {
+  text-decoration: none;
+  color: #43b02a; }
+
+a:hover, a:active, a:focus {
+  text-decoration: underline; }
+
+em {
+  font-style: italic; }
+
+/* p,a,strong,em,li,dl,dt { */
+p, dl, dt {
+  margin: 6px 0;
+  line-height: 1.5em; }
+
+p {
+  margin: 25px 0; }
+
+dd {
+  margin-left: 2.5em; }
+
+table {
+  width: 100%;
+  margin: 4px 0px; }
+
+h1 {
+  font-size: 36px;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.3em;
+  font-weight: normal; }
+
+h3 {
+  font-size: 1.2em; }
+
+h4 {
+  font-size: 1.15em; }
+
+h5 {
+  font-size: 1em; }
+
+fieldset {
+  border-width: 1px;
+  border-style: solid; }
+
+#site-name, #site-slogan {
+  font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', Baskerville, serif; }
+
+/*------- end of default section --------*/
+.inner {
+  width: 960px;
+  margin: 0 auto; }
+
+/*------- 2 Column --------*/
+.node--type-_-column .field--name-field-c,
+.node--type-_-column .field--name-field-column-2 {
+  display: block;
+  float: left;
+  width: 50%; }
+
+/* --------------- Header       ------------ */
+#header {
+  background-color: #385464;
+  background-image: url("../images/header_bg.png");
+  background-position: center;
+  background-repeat: repeat-x;
+  height: 100px;
+  margin-bottom: 2px; }
+  #header h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    float: left; }
+    #header h1 a {
+      color: #41af28; }
+  #header #block-primaryheadermenu {
+    font-size: 18px; }
+  #header nav {
+    min-width: 51%; }
+    #header nav ul {
+      text-align: right; }
+  #header nav .menu li {
+    margin: 0 5px; }
+    #header nav .menu li .separator {
+      margin-left: 10px; }
+
+.region-menubar nav {
+  margin: 0;
+  float: none; }
+  .region-menubar nav li {
+    width: 20%;
+    text-align: center;
+    display: block;
+    float: left;
+    font-size: 18px;
+    padding: 0;
+    margin: 0; }
+  .region-menubar nav li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0; }
+    .region-menubar nav li a.is-active {
+      text-decoration: underline; }
+  .region-menubar nav li:nth-child(1) {
+    background-color: #e4e451; }
+  .region-menubar nav li:nth-child(2) {
+    background-color: #f2940e; }
+  .region-menubar nav li:nth-child(3) {
+    background-color: #599dd7;
+    color: white; }
+  .region-menubar nav li:nth-child(4) {
+    background-color: #506d85; }
+  .region-menubar nav li:nth-child(5) {
+    background-color: #009a44; }
+  .region-menubar nav li:nth-child(6) {
+    background-color: #c6579a; }
+  .region-menubar nav ul {
+    margin: 0 auto; }
+
+nav {
+  margin-top: 15px;
+  float: right; }
+  nav .menu li {
+    display: inline;
+    color: white; }
+    nav .menu li a {
+      color: white; }
+    nav .menu li a:hover {
+      text-decoration: underline; }
+  nav li:last-child .separator {
+    display: none; }
+  nav .menu-bart .menu-item .is-active {
+    text-transform: uppercase; }
+
+#menubar {
+  background-color: #435563; }
+
+.home-banner {
+  background-color: #385464;
+  background-image: url("../images/home_banner_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 2px;
+  /*.motif-left,
+  .motif-right {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 453px;
+    background-image: url("../images/home_banner_motif.png");
+    background-repeat: no-repeat;
+  }
+  .motif-left {
+    left: -453px;
+  }
+  .motif-right {
+    right: -453px;
+    top: 0;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }*/ }
+  .home-banner .home-banner-inner {
+    height: 473px;
+    position: relative;
+    border-left: 2px solid white;
+    border-right: 2px solid white; }
+    .home-banner .home-banner-inner .slide {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -webkit-transition: opacity 1s ease-in-out; }
+      .home-banner .home-banner-inner .slide img {
+        width: 100%; }
+      .home-banner .home-banner-inner .slide span {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        font-size: 48px;
+        color: white;
+        text-shadow: -2px 1px 1px rgba(0, 0, 0, 0.7); }
+    .home-banner .home-banner-inner .slide.active {
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -webkit-transition: opacity 1s ease-in-out; }
+    .home-banner .home-banner-inner #slide1 {
+      z-index: 50; }
+    .home-banner .home-banner-inner #slide2 {
+      z-index: 40; }
+    .home-banner .home-banner-inner #slide3 {
+      z-index: 30; }
+    .home-banner .home-banner-inner #slide2 {
+      z-index: 20; }
+    .home-banner .home-banner-inner #slide1 {
+      z-index: 10; }
+
+#footer-wrapper {
+  background-color: #385464;
+  height: 130px; }
+
+.node--type-sections-page main#content,
+.node--type-basic-page main#content {
+  padding: 0 50px; }
+
+/*------- Colour Palette Sections  --------*/
+.palette-section {
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-bottom: 50px; }
+
+.palette-item {
+  width: 33%;
+  float: left;
+  padding: 25px 50px;
+  height: 350px;
+  overflow: hidden; }
+  .palette-item h2 {
+    margin: 0;
+    font-size: 36px; }
+  .palette-item p {
+    font-size: 18px;
+    margin: 25px 0 0; }
+
+.palette-item:nth-child(1) {
+  background-color: #e4e451; }
+
+.palette-item:nth-child(2) {
+  background-color: #f2940e; }
+
+.palette-item:nth-child(3) {
+  background-color: #599dd7;
+  color: white; }
+
+.palette-item:nth-child(4) {
+  background-color: #506d85;
+  color: white; }
+
+.palette-item:nth-child(5) {
+  background-color: #009a44;
+  color: white; }
+
+.palette-item:nth-child(6) {
+  background-color: #c6579a;
+  color: white; }
+
+/* --------------- Home Page Logos ------------ */
+.logos {
+  list-style: none;
+  margin-left: -50px;
+  margin-right: -50px; }
+  .logos li {
+    float: left;
+    margin: 0 38px; }
+
+/* --------------- Locations       ------------ */
+.netbyte-locator-filters {
+  background: lightgreen; }
+  .netbyte-locator-filters ul {
+    list-style: none;
+    padding: 10px 0; }
+    .netbyte-locator-filters ul li {
+      display: inline; }
+      .netbyte-locator-filters ul li .separator {
+        margin: 0 10px; }
+      .netbyte-locator-filters ul li a {
+        color: #385464; }
+    .netbyte-locator-filters ul li:last-child .separator {
+      display: none; }
+
+/*------- Parenting Tips --------*/
+.parenting-tips .pt-nav {
+  width: 33.333%;
+  float: left;
+  padding: 0;
+  background-color: #009a44;
+  color: white; }
+  .parenting-tips .pt-nav h2 {
+    padding: 25px 50px;
+    margin: 0;
+    font-size: 36px; }
+  .parenting-tips .pt-nav ul {
+    list-style: none;
+    margin: 0; }
+    .parenting-tips .pt-nav ul li {
+      font-size: 18px;
+      margin: 0;
+      width: 100%; }
+      .parenting-tips .pt-nav ul li a {
+        padding: 10px 50px;
+        display: block;
+        color: white;
+        width: 100%;
+        text-decoration: none; }
+      .parenting-tips .pt-nav ul li a:hover {
+        background-color: #c6579a; }
+
+.pt-section {
+  width: 50%;
+  float: left;
+  padding: 25px 50px;
+  margin: 0; }
+  .pt-section h2 {
+    font-size: 36px; }
+    .pt-section h2 a {
+      color: white; }
+
+.pt-section:nth-child(1) {
+  background-color: #506d85; }
+
+.pt-section:nth-child(2) {
+  background-color: #c6579a; }
+
+/*------- My Pregnancy --------*/
+.pregnancy-slider {
+  padding-top: 1px;
+  display: none; }
+  .pregnancy-slider .stage-holder {
+    position: relative;
+    margin-bottom: 25px;
+    height: 60px; }
+    .pregnancy-slider .stage-holder .stage {
+      display: none;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-image: url("../images/pregnancy-slider/week_tile.png");
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      padding-top: 8px; }
+      .pregnancy-slider .stage-holder .stage.active {
+        display: block; }
+      .pregnancy-slider .stage-holder .stage span {
+        font-weight: bold;
+        font-size: 12px;
+        display: block;
+        font-family: arial; }
+      .pregnancy-slider .stage-holder .stage #number {
+        font-size: 24px; }
+  .pregnancy-slider .week-content-wrapper {
+    position: relative; }
+    .pregnancy-slider .week-content-wrapper .arrow {
+      position: absolute;
+      background-image: url("../images/pregnancy-slider/left.png");
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px; }
+      .pregnancy-slider .week-content-wrapper .arrow a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    .pregnancy-slider .week-content-wrapper .left {
+      left: 0; }
+    .pregnancy-slider .week-content-wrapper .right {
+      right: 0;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH"; }
+    .pregnancy-slider .week-content-wrapper h2 {
+      display: block;
+      height: 35px;
+      text-indent: -10000px;
+      background-image: url("../images/pregnancy-slider/header_bg.png");
+      background-repeat: no-repeat;
+      margin-left: 200px;
+      margin-bottom: 50px; }
+    .pregnancy-slider .week-content-wrapper .baby,
+    .pregnancy-slider .week-content-wrapper .mum {
+      display: block;
+      float: left;
+      min-height: 300px; }
+    .pregnancy-slider .week-content-wrapper .image {
+      display: block;
+      width: 180px;
+      min-height: 300px;
+      float: left; }
+      .pregnancy-slider .week-content-wrapper .image h3 {
+        display: none; }
+      .pregnancy-slider .week-content-wrapper .image .slide {
+        width: 180px;
+        display: none; }
+        .pregnancy-slider .week-content-wrapper .image .slide.active {
+          display: block; }
+        .pregnancy-slider .week-content-wrapper .image .slide img {
+          width: 100%; }
+    .pregnancy-slider .week-content-wrapper .text {
+      display: block;
+      float: left;
+      position: relative;
+      width: 255px; }
+      .pregnancy-slider .week-content-wrapper .text .slide {
+        display: none; }
+        .pregnancy-slider .week-content-wrapper .text .slide.active {
+          display: block; }
+    .pregnancy-slider .week-content-wrapper h3 {
+      font-size: 36px;
+      margin: 0 0 25px; }
+    .pregnancy-slider .week-content-wrapper .separator {
+      margin: 0 25px;
+      display: block;
+      float: left;
+      width: 40px;
+      height: 270px;
+      background-image: url("/themes/mayo/images/pregnancy-slider/separator.png");
+      background-repeat: no-repeat;
+      background-position: center; }
+  .pregnancy-slider .logo-strip {
+    background-color: #d9dee9;
+    text-align: right; }
+    .pregnancy-slider .logo-strip .text {
+      width: 80%;
+      float: left;
+      padding: 12px 0; }
+    .pregnancy-slider .logo-strip .image {
+      padding-top: 4px;
+      width: 20%;
+      float: right;
+      text-align: left; }
+
+/* --------------- Responsive       ------------ */
+@media only screen and (max-width: 480px) {
+  /* --------------- Layout   ------------ */
+  .inner {
+    width: 320px;
+    margin: 0 auto; }
+
+  /*------- 2 Column --------*/
+  .node--type-_-column .field--name-field-c,
+  .node--type-_-column .field--name-field-column-2 {
+    width: 100%; }
+
+  /* --------------- Header       ------------ */
+  #header {
+    background-repeat: repeat;
+    margin-bottom: 2px; }
+    #header h1 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      float: left; }
+    #header #block-primaryheadermenu {
+      font-size: 14px; }
+    #header nav {
+      min-width: 51%;
+      margin-top: 5px; }
+      #header nav ul {
+        text-align: right; }
+    #header nav .menu li {
+      margin: 0 0px; }
+      #header nav .menu li .separator {
+        margin-left: 2px; }
+
+  .home-banner .home-banner-inner {
+    height: 156px; }
+    .home-banner .home-banner-inner .slide span {
+      top: 35%;
+      font-size: 20px; }
+
+  .region-menubar nav li {
+    width: 100%;
+    font-size: 14px; }
+
+  /*------- Responsive Content  --------*/
+  .node--type-sections-page main#content,
+  .node--type-basic-page main#content {
+    padding: 0; }
+
+  /*------- Responsive Colour Palette Sections  --------*/
+  .palette-section {
+    margin-left: 0;
+    margin-right: 0; }
+
+  .palette-item {
+    width: 100%;
+    padding: 25px 50px; }
+    .palette-item h2 {
+      margin: 0;
+      font-size: 36px; }
+    .palette-item p {
+      font-size: 18px;
+      margin: 25px 0 0; }
+
+  .logos li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px; }
+
+  /*------- Repsonsive My Pregnancy --------*/
+  .pregnancy-slider .week-content-wrapper .arrow {
+    top: 40px; }
+  .pregnancy-slider .week-content-wrapper h2 {
+    margin-left: 0px;
+    text-indent: 0px;
+    background-image: none; }
+  .pregnancy-slider .week-content-wrapper .baby,
+  .pregnancy-slider .week-content-wrapper .mum {
+    min-height: 600px; }
+  .pregnancy-slider .week-content-wrapper .image {
+    display: block;
+    width: 320px;
+    min-height: 0px;
+    float: left; }
+    .pregnancy-slider .week-content-wrapper .image h3 {
+      display: block; }
+    .pregnancy-slider .week-content-wrapper .image .slide {
+      width: 320px;
+      display: none; }
+      .pregnancy-slider .week-content-wrapper .image .slide.active {
+        display: block; }
+      .pregnancy-slider .week-content-wrapper .image .slide img {
+        width: 100%; }
+  .pregnancy-slider .week-content-wrapper .text {
+    display: block;
+    float: left;
+    position: relative;
+    width: 255px; }
+    .pregnancy-slider .week-content-wrapper .text h3 {
+      display: none; }
+    .pregnancy-slider .week-content-wrapper .text .slide {
+      display: none; }
+      .pregnancy-slider .week-content-wrapper .text .slide.active {
+        display: block; }
+  .pregnancy-slider .week-content-wrapper h3 {
+    font-size: 36px;
+    margin: 0 0 25px; }
+  .pregnancy-slider .week-content-wrapper .separator {
+    display: none; }
+  .pregnancy-slider .logo-strip .text {
+    width: 67%;
+    float: left;
+    padding: 12px 0; }
+  .pregnancy-slider .logo-strip .image {
+    padding-top: 13px;
+    width: 30%;
+    float: right;
+    text-align: left; }
+
+  /*------- Responsive Parenting Tips --------*/
+  .parenting-tips .pt-nav {
+    width: 100%; }
+
+  .pt-section {
+    width: 100%; } }

@@ -1,0 +1,270 @@
+
+.node--type-sections-page main#content,
+.node--type-basic-page main#content,
+{
+  padding: 0 $site-padding;
+}
+/*------- Colour Palette Sections  --------*/
+.palette-section {
+  margin-left: -$site-padding;
+  margin-right: -$site-padding;
+  margin-bottom: $site-padding;
+
+}
+.palette-item {
+  width: 33%;
+  float: left;
+  padding: 25px 50px;
+  height: 350px;
+  overflow: hidden;
+  h2 {
+    margin: 0;
+    font-size: $section-h2-size;
+  }
+  p {
+    font-size: 18px;
+    margin: 25px 0 0;
+  }
+}
+.palette-item:nth-child(1) {
+  background-color: $section-yellow;
+}
+.palette-item:nth-child(2) {
+  background-color: $section-orange;
+}
+.palette-item:nth-child(3) {
+  background-color: $section-light-blue;
+  color: white;
+}
+.palette-item:nth-child(4) {
+  background-color: $section-dark-blue;
+  color: white;
+}
+.palette-item:nth-child(5) {
+  background-color: $section-green;
+  color: white;
+}
+.palette-item:nth-child(6) {
+  background-color: $section-pink;
+  color: white;
+}
+
+/* --------------- Home Page Logos ------------ */
+.logos {
+  list-style: none;
+  margin-left: -$site-padding;
+  margin-right: -$site-padding;
+  li {
+    float: left;
+    margin: 0 38px;
+  }
+}
+
+/* --------------- Locations       ------------ */
+.netbyte-locator-filters {
+  background: lightgreen;
+  ul {
+    list-style: none;
+    padding: 10px 0;
+    li {
+      display: inline;
+      .separator {
+        margin: 0 10px;
+      }
+      a {
+        color: $site-blue;
+      }
+    }
+    li:last-child .separator{
+      display: none;
+    }
+  }
+}
+/*------- Parenting Tips --------*/
+.parenting-tips {
+  .pt-nav {
+    width: 33.333%;
+    float: left;
+    padding: 0;
+    background-color: $section-green;
+    color: white;
+    h2 {
+      padding: 25px 50px;
+      margin: 0;
+      font-size: $section-h2-size;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        font-size: 18px;
+        margin: 0;
+        width: 100%;
+        a {
+          padding: 10px 50px;
+          display: block;
+          color: white;
+          width: 100%;
+          text-decoration: none;
+        }
+        a:hover {
+          background-color: $section-pink;
+        }
+      }
+    }
+  }
+}
+.pt-section {
+  width: 50%;
+  float: left;
+  padding: 25px 50px;
+  margin: 0;
+  h2 {
+    font-size: $section-h2-size;
+    a {
+      color: white;
+    }
+  }
+}
+.pt-section:nth-child(1) {
+  background-color: $section-dark-blue;
+}
+.pt-section:nth-child(2) {
+  background-color: $section-pink;
+}
+/*------- My Pregnancy --------*/
+.pregnancy-slider {
+  padding-top: 1px;
+  display: none;
+  .stage-holder {
+    position: relative;
+    margin-bottom: 25px;
+    height: 60px;
+    .stage {
+      display: none;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-image: url("../images/pregnancy-slider/week_tile.png");
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      padding-top: 8px;
+      &.active {
+        display: block;
+      }
+      span {
+        font-weight: bold;
+        font-size: 12px;
+        display: block;
+        font-family: arial;
+      }
+      #number {
+        font-size: 24px;
+      }
+    }
+  }
+  .week-content-wrapper {
+    position: relative;
+    .arrow {
+      position: absolute;
+      background-image: url("../images/pregnancy-slider/left.png");
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .left {
+      left: 0;
+    }
+    .right {
+      right: 0;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+    h2 {
+      display: block;
+      height: 35px;
+      text-indent: -10000px;
+      background-image: url("../images/pregnancy-slider/header_bg.png");
+      background-repeat: no-repeat;
+      margin-left: 200px;
+      margin-bottom: 50px;
+    }
+    .baby,
+    .mum {
+      display: block;
+      float: left;
+      min-height: 300px;
+    }
+    .image {
+      h3 {
+        display: none;
+      }
+      display: block;
+      width: 180px;
+      min-height: 300px;
+      float: left;
+      .slide {
+        width: 180px;
+        display: none;
+        &.active {
+          display: block;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .text {
+      display: block;
+      float: left;
+      position: relative;
+      width: 255px;
+      .slide {
+        display: none;
+        &.active {
+            display: block;
+        }
+      }
+    }
+    h3 {
+      font-size: 36px;
+      margin: 0 0 25px;
+    }
+
+    .separator {
+      margin: 0 25px;
+      display: block;
+      float: left;
+      width: 40px;
+      height: 270px;
+      background-image: url("/themes/mayo/images/pregnancy-slider/separator.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .logo-strip {
+    background-color: #d9dee9;
+    text-align: right;
+    .text {
+      width: 80%;
+      float: left;
+      padding: 12px 0;
+    }
+    .image {
+      padding-top: 4px;
+      width: 20%;
+      float: right;
+      text-align: left;
+    }
+  }
+}

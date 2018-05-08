@@ -1,0 +1,50 @@
+<?php
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+function netbyte_locator_theme($existing, $type, $theme, $path) {
+    return array(
+        'content' => array(
+            'variables' => array('locator_types' => NULL),
+        ),
+    );
+}
+
+function netbyte_locator_form_node_locator_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+    $a  = \Drupal\Core\Url::fromRoute('locator.geoip');
+    $form['Looking up latitude/longitude'] = array(
+        '#type' => 'just_button',
+        '#value' => t('Looking up latitude/longitude'),
+        '#weight' => 40,
+        '#ajax' => array(
+            'url' => $a,
+            'progress' => array(
+                'type' => 'throbber',
+                'message' => t('Looking up geo information...'),
+            ),
+            'event' => 'mousedown',
+            'keypress' => TRUE
+        ),
+        '#suffix' => '<span class="geo-valid-message"></span>'
+
+    );
+}
+
+function netbyte_locator_form_node_locator_edit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+    netbyte_locator_form_node_locator_form_alter($form, $form_state, $form_id);
+}
+
+/*
+function netbyte_locator_menu_links_discovered_alter(&$links) {
+    kint($links);
+}
+*/
+/*
+function netbyte_locator_install() {
+    MenuLinkContent::create([
+        'title' => 'Location',
+        'link' => ['uri' => 'route:locator.filters'],
+        'menu_name' => 'main',
+    ])->save();
+}
+*/

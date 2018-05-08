@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_street
+    - node.type.locator
+id: node.locator.field_street
+field_name: field_street
+entity_type: node
+bundle: locator
+label: Street
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

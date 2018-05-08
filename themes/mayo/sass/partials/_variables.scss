@@ -1,0 +1,38 @@
+// Colours
+// ====================================================================
+$site-blue: #385464;
+$anchor-colour: #43b02a;
+$section-yellow: #e4e451;
+$section-orange: #f2940e;
+$section-light-blue: #599dd7;
+$section-dark-blue: #506d85;
+$section-green: #009a44;
+$section-pink: #c6579a;
+
+// Font Sizing
+// ====================================================================
+$section-h2-size: 36px;
+$responsive-section-h2-size: 36px;
+// Spacing
+// ====================================================================
+$site-width: 960px;
+$site-padding: 50px;
+$responsive-site-width: 320px;
+
+// Mixin variables
+// ====================================================================
+$defined-bs-type: border-box !default;
+
+// Transition Timing
+// ====================================================================
+$transition-timing: 1s;
+
+
+// Breakpoint variables
+// ====================================================================
+$XS: 320px;  // Smartphone portrait
+$S: 480px;   // Smartphone landscape
+$M: 768px;   // iPad portrait
+$L: 1024px; // iPad landscape
+$XL: 1224px;  // Desktops and laptops
+$BS: 1824px; // Large screens

@@ -1,0 +1,18 @@
+// ====================================================================
+// Basic Layout Styles
+// ====================================================================
+
+.inner{
+  width: $site-width;
+  margin: 0 auto;
+}
+
+/*------- 2 Column --------*/
+.node--type-_-column {
+  .field--name-field-c,
+  .field--name-field-column-2 {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+}

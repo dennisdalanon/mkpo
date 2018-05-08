@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.locator.body
+    - field.field.node.locator.field_city_town
+    - field.field.node.locator.field_latitude_
+    - field.field.node.locator.field_number_unit
+    - field.field.node.locator.field_ongitude_
+    - field.field.node.locator.field_phone
+    - field.field.node.locator.field_street
+    - field.field.node.locator.field_suburb
+    - field.field.node.locator.field_type
+    - node.type.locator
+  module:
+    - text
+    - user
+id: node.locator.teaser
+targetEntityType: node
+bundle: locator
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_city_town: true
+  field_latitude_: true
+  field_number_unit: true
+  field_ongitude_: true
+  field_phone: true
+  field_street: true
+  field_suburb: true
+  field_type: true

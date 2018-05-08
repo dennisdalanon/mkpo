@@ -1,0 +1,178 @@
+/* --------------- Responsive       ------------ */
+@media only screen and (max-width: 480px) {
+  /* --------------- Layout   ------------ */
+  .inner{
+    width: $responsive-site-width;
+    margin: 0 auto;
+  }
+  /*------- 2 Column --------*/
+  .node--type-_-column {
+    .field--name-field-c,
+    .field--name-field-column-2 {
+      width: 100%;
+    }
+  }
+  /* --------------- Header       ------------ */
+  #header {
+    background-repeat: repeat;
+    margin-bottom: 2px;
+    h1 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      float: left;
+    }
+    #block-primaryheadermenu {
+      font-size: 14px;
+    }
+    nav {
+      min-width: 51%;
+      margin-top: 5px;
+      ul {
+        text-align: right;
+      }
+    }
+    nav .menu li {
+      margin: 0 0px;
+      .separator {
+        margin-left: 2px;
+      }
+    }
+  }
+
+  .home-banner {
+    .home-banner-inner {
+      height: 156px;
+      .slide {
+        span {
+          top: 35%;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .region-menubar {
+    nav {
+      li {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+
+  /*------- Responsive Content  --------*/
+  .node--type-sections-page main#content,
+  .node--type-basic-page main#content,
+  {
+    padding: 0;
+  }
+
+  /*------- Responsive Colour Palette Sections  --------*/
+  .palette-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .palette-item {
+    width: 100%;
+    padding: 25px 50px;
+    h2 {
+      margin: 0;
+      font-size: $responsive-section-h2-size;
+    }
+    p {
+      font-size: 18px;
+      margin: 25px 0 0;
+    }
+  }
+
+  .logos {
+    li {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  }
+
+  /*------- Repsonsive My Pregnancy --------*/
+  .pregnancy-slider {
+    .week-content-wrapper {
+      .arrow {
+        top: 40px;
+      }
+      h2 {
+        margin-left: 0px;
+        text-indent: 0px;
+        background-image: none;
+      }
+      .baby,
+      .mum {
+        min-height: 600px;
+      }
+      .image {
+        h3 {
+          display: block;
+        }
+        display: block;
+        width: $responsive-site-width;
+        min-height: 0px;
+        float: left;
+        .slide {
+          width: $responsive-site-width;
+          display: none;
+          &.active {
+            display: block;
+          }
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .text {
+        h3 {
+          display: none;
+        }
+        display: block;
+        float: left;
+        position: relative;
+        width: 255px;
+        .slide {
+          display: none;
+          &.active {
+            display: block;
+          }
+        }
+      }
+      h3 {
+        font-size: 36px;
+        margin: 0 0 25px;
+      }
+
+      .separator {
+        display: none;
+      }
+    }
+    .logo-strip {
+      .text {
+        width: 67%;
+        float: left;
+        padding: 12px 0;
+      }
+      .image {
+        padding-top: 13px;
+        width: 30%;
+        float: right;
+        text-align: left;
+      }
+    }
+  }
+
+  /*------- Responsive Parenting Tips --------*/
+  .parenting-tips {
+    .pt-nav {
+      width: 100%;
+    }
+  }
+  .pt-section {
+    width: 100%;
+  }
+}

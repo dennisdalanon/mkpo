@@ -1,0 +1,21 @@
+google_map_api:
+  js:
+    https://maps.googleapis.com/maps/api/js: { type: external }
+
+google_makercluster_min:
+  js:
+    js/makercluster.min.js: {}
+    js/markerwithlabel.js: {}
+netbyte_locator_js:
+  js:
+    js/netbyte_locator.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - netbyte_locator/google_map_api
+
+netbyte_locator_css:
+  css:
+    theme:
+      css/netbyte_locator.css: {}

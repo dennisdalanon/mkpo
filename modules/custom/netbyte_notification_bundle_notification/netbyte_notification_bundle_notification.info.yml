@@ -1,0 +1,19 @@
+name: Notification
+description: 'Provide Notification content type and related configuration. Pregnancy Notification'
+type: module
+core: 8.x
+dependencies:
+  - menu_ui
+  - node
+  - text
+  - user
+config:
+  - node.type.notification
+  - field.field.node.notification.field_count_down_days
+  - field.field.node.notification.body
+  - core.entity_view_display.node.notification.teaser
+  - core.base_field_override.node.notification.promote
+  - features.bundle.netbyte_notification_bundle
+package: netbyte-notification-bundle
+features:
+  bundle: netbyte_notification_bundle

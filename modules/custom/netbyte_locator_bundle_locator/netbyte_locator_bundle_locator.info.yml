@@ -1,0 +1,29 @@
+name: locator
+description: 'Provide locator content type and related configuration. find out where is mid wives, ultra sound device'
+type: module
+core: 8.x
+dependencies:
+  - menu_ui
+  - node
+  - options
+  - path
+  - text
+  - user
+config:
+  - node.type.locator
+  - field.field.node.locator.field_type
+  - core.entity_form_display.node.locator.default
+  - core.entity_view_display.node.locator.default
+  - core.entity_view_display.node.locator.teaser
+  - field.field.node.locator.field_suburb
+  - field.field.node.locator.field_street
+  - field.field.node.locator.field_phone
+  - field.field.node.locator.field_ongitude_
+  - field.field.node.locator.field_number_unit
+  - field.field.node.locator.field_latitude_
+  - field.field.node.locator.field_city_town
+  - field.field.node.locator.body
+  - features.bundle.netbyte_locator_bundle
+package: netbyte-locator-bundle
+features:
+  bundle: netbyte_locator_bundle

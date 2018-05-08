@@ -1,0 +1,35 @@
+netbyte_login.login:
+    path: /netbytelogin
+    defaults:
+        _controller: '\Drupal\netbyte_login\Controller\LoginController::login'
+        _title: 'Login'
+        type: 'all'
+    requirements:
+        _permission: 'access content'
+
+netbyte_login.logout:
+    path: /netbytelogout
+    defaults:
+        _controller: '\Drupal\netbyte_login\Controller\LoginController::logout'
+        _title: 'Logout'
+        type: 'all'
+    requirements:
+        _permission: 'access content'
+
+netbyte_login.registration:
+    path: /netbyteregistration
+    defaults:
+        _controller: '\Drupal\netbyte_login\Controller\LoginController::registration'
+        _title: 'Registration'
+        type: 'all'
+    requirements:
+        _permission: 'access content'
+
+netbyte_login.updateprofile:
+    path: /netbyteupdateprofile/{uid}/{uuid}
+    defaults:
+        _controller: '\Drupal\netbyte_login\Controller\LoginController::profile'
+        _title: 'Update Profile'
+        type: 'all'
+    requirements:
+        _permission: 'access content'

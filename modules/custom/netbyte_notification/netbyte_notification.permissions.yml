@@ -1,0 +1,4 @@
+notification access:
+  title: notification access
+  restrict access: true
+  description: grant permission for access notification REST end point

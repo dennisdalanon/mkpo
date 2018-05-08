@@ -1,0 +1,20 @@
+<div class="netbyte-locator-filters">
+    <ul>
+        <li>
+            <a class="netbyte-locator-filter" href="javascript:void(0);" data-locator-filter="all">All</a>
+            <span class="separator">/</span>
+        </li>
+        {% for key, item in locator_types.allowed_values %}
+            <li>
+                <a class="netbyte-locator-filter" href="javascript:void(0);" data-locator-filter="{{ key }}">{{ item }}</a>
+                <span class="separator">/</span>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div >
+    <div id="netbyte_locator_map">
+
+    </div>
+</div>

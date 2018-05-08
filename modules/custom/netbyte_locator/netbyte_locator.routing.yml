@@ -1,0 +1,23 @@
+locator.filters:
+    path: /locator/{type}
+    defaults:
+        _controller: '\Drupal\netbyte_locator\Controller\LocatorController::content'
+        _title: 'Locator content'
+        type: 'all'
+    requirements:
+        _permission: 'access content'
+
+locator.geoip:
+    path: /geoip
+    defaults:
+        _controller: '\Drupal\netbyte_locator\Controller\LocatorController::geoip'
+        _title: 'find geo ip by address'
+    requirements:
+        _permission: 'access content'
+
+netbyte_locator.settings:
+  path: '/admin/config/content/netbyte_locator'
+  defaults:
+    _form: '\Drupal\netbyte_locator\Form\LocatorSettingForm'
+  requirements:
+    _permission: 'administer site configuration'

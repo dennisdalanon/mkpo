@@ -1,0 +1,140 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_week_number
+field_name: field_week_number
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: 'week 1'
+    -
+      value: 2
+      label: 'week 2'
+    -
+      value: 3
+      label: 'week 3'
+    -
+      value: 4
+      label: 'week 4'
+    -
+      value: 5
+      label: 'week 5'
+    -
+      value: 6
+      label: 'week 6'
+    -
+      value: 7
+      label: 'week 7'
+    -
+      value: 8
+      label: 'week 8'
+    -
+      value: 9
+      label: 'week 9'
+    -
+      value: 10
+      label: 'week 10'
+    -
+      value: 11
+      label: 'week 11'
+    -
+      value: 12
+      label: 'week 12'
+    -
+      value: 13
+      label: 'week 13'
+    -
+      value: 14
+      label: 'week 14'
+    -
+      value: 15
+      label: 'week 15'
+    -
+      value: 16
+      label: 'week 16'
+    -
+      value: 17
+      label: 'week 17'
+    -
+      value: 18
+      label: 'week 18'
+    -
+      value: 19
+      label: 'week 19'
+    -
+      value: 20
+      label: 'week 20'
+    -
+      value: 21
+      label: 'week 21'
+    -
+      value: 22
+      label: 'week 22'
+    -
+      value: 23
+      label: 'week 23'
+    -
+      value: 24
+      label: 'week 24'
+    -
+      value: 25
+      label: 'week 25'
+    -
+      value: 26
+      label: 'week 26'
+    -
+      value: 27
+      label: 'week 27'
+    -
+      value: 28
+      label: 'week 28'
+    -
+      value: 29
+      label: 'week 29'
+    -
+      value: 30
+      label: 'week 30'
+    -
+      value: 31
+      label: 'week 31'
+    -
+      value: 32
+      label: 'week 32'
+    -
+      value: 33
+      label: 'week 33'
+    -
+      value: 34
+      label: 'week 34'
+    -
+      value: 35
+      label: 'week 35'
+    -
+      value: 36
+      label: 'week 36'
+    -
+      value: 37
+      label: 'week 37'
+    -
+      value: 38
+      label: 'week 38'
+    -
+      value: 39
+      label: 'week 39'
+    -
+      value: 40
+      label: 'week 40'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

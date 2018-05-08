@@ -1,0 +1,10 @@
+name: NetByte Appointment Module
+description: Calendar used to show events.
+package: Custom
+
+type: module
+core: 8.x
+
+dependencies:
+    - user
+    - datetime

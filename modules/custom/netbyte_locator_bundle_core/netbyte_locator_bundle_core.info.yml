@@ -1,0 +1,31 @@
+name: Core
+description: 'Provide core components required by other features.'
+type: module
+core: 8.x
+dependencies:
+  - file
+  - image
+  - node
+  - options
+  - taxonomy
+  - text
+config:
+  - field.storage.node.field_baby_image
+  - field.storage.node.field_baby_text
+  - field.storage.node.field_city_town
+  - field.storage.node.field_image
+  - field.storage.node.field_latitude_
+  - field.storage.node.field_mum_image
+  - field.storage.node.field_mum_text
+  - field.storage.node.field_number_unit
+  - field.storage.node.field_ongitude_
+  - field.storage.node.field_phone
+  - field.storage.node.field_street
+  - field.storage.node.field_suburb
+  - field.storage.node.field_tags
+  - field.storage.node.field_type
+  - field.storage.node.field_week_number
+  - user.role.administrator
+package: netbyte-locator-bundle
+features:
+  bundle: netbyte_locator_bundle

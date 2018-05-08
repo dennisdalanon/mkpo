@@ -1,0 +1,56 @@
+netbyte_appointment.month:
+    path: /appointment/year/{year}/month/{month}/user/{id}
+    defaults:
+        _controller: '\Drupal\netbyte_appointment\Controller\AppointmentController::month'
+        _title: 'Appointment'
+        type: 'all'
+    requirements:
+        _permission: 'appointment access'
+        id: \d+
+
+netbyte_appointment.fetchMonth:
+    path: /appointment/fetchmonth/{year}/{month}
+    defaults:
+        _controller: '\Drupal\netbyte_appointment\Controller\AppointmentController::fetchMonth'
+        _title: 'Appointment'
+        type: 'all'
+    requirements:
+        _permission: 'appointment access'
+        id: \d+
+
+netbyte_appointment.year:
+    path: /appointment/year/{year}/user/{id}
+    defaults:
+        _controller: '\Drupal\netbyte_appointment\Controller\AppointmentController::year'
+        _title: 'Appointment'
+        type: 'all'
+    requirements:
+        _permission: 'appointment access'
+        id: \d+
+netbyte_appointment.create:
+    path: /appointment/create/{uid}/{uuid}
+    defaults:
+        _controller: '\Drupal\netbyte_appointment\Controller\AppointmentController::createAppointment'
+        _title: 'Appointment create'
+        type: 'all'
+    requirements:
+        _permission: 'appointment access'
+        id: \d+
+netbyte_appointment.update:
+    path: /appointment/update/{uid}/{uuid}
+    defaults:
+        _controller: '\Drupal\netbyte_appointment\Controller\AppointmentController::updateAppointment'
+        _title: 'Appointment update'
+        type: 'all'
+    requirements:
+        _permission: 'appointment access'
+        id: \d+
+netbyte_appointment.delete:
+    path: /appointment/delete/{uid}/{uuid}
+    defaults:
+        _controller: '\Drupal\netbyte_appointment\Controller\AppointmentController::deleteAppointment'
+        _title: 'Appointment delete'
+        type: 'all'
+    requirements:
+        _permission: 'appointment access'
+        id: \d+

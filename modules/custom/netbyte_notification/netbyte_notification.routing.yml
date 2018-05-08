@@ -1,0 +1,19 @@
+netbyte_notification.notification:
+    path: /notification/{id}/{uuid}
+    defaults:
+        _controller: '\Drupal\netbyte_notification\Controller\NotificationController::notification'
+        _title: 'Notification'
+        type: 'all'
+    requirements:
+        _permission: 'notification access'
+        id: \d+
+netbyte_notification.target:
+    path: /notification/target/{targetId}/{notificationId}
+    defaults:
+        _controller: '\Drupal\netbyte_notification\Controller\NotificationController::target'
+        _title: 'Notification target'
+        type: 'all'
+    requirements:
+        _permission: 'notification access'
+        targetId: \d+
+        notificationId: \d+

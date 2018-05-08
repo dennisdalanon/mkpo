@@ -1,0 +1,9 @@
+name: NetByte Login Module
+description: Ajax login.
+package: Custom
+
+type: module
+core: 8.x
+
+dependencies:
+    - user
